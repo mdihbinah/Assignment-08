@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tile_001",
+    "title": "Minimal Abstract Texture",
+    "description": "Modern abstract design with soft neutral tones",
+    "image": "https://i.ibb.co.com/HLMrCWwk/danny-howe-JQCc-N6-BGIv-E-unsplash-1.jpg",
+    "category": "abstract",
+    "price": 42.5,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_002",
+    "title": "Golden Sand Pattern",
+    "description": "Warm sandy texture with artistic flow design",
+    "image": "https://i.ibb.co.com/9mCZcc6p/melissa-5-P-2-JIPODa-A-unsplash.jpg",
+    "category": "artistic",
+    "price": 48.0,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Porcelain",
+    "inStock": true
+  },
+  {
+    "id": "tile_003",
+    "title": "Blue Gradient Marble",
+    "description": "Elegant blue-toned marble texture with smooth finish",
+    "image": "https://i.ibb.co.com/G380XnB3/andrew-ridley-j-R4-Zf-ri-Ej-I-unsplash.jpg",
+    "category": "marble",
+    "price": 55.99,
+    "currency": "USD",
+    "dimensions": "80x80 cm",
+    "material": "Marble",
+    "inStock": true
+  },
+  {
+    "id": "tile_004",
+    "title": "Dark Concrete Flow",
+    "description": "Industrial concrete style with fluid dark patterns",
+    "image": "https://i.ibb.co.com/PvdbnTCY/vladislav-glukhotko-7pr9-GJfd-WM8-unsplash.jpg",
+    "category": "concrete",
+    "price": 39.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": false
+  },
+  {
+    "id": "tile_005",
+    "title": "Soft Ink Waves",
+    "description": "Minimal ink-inspired wave texture design",
+    "image": "https://i.ibb.co.com/x8H7N6ZH/ted-balmer-M-Tsnm7-Lo-C8-unsplash.jpg",
+    "category": "ink",
+    "price": 46.75,
+    "currency": "USD",
+    "dimensions": "50x50 cm",
+    "material": "Porcelain",
+    "inStock": true
+  },
+  {
+    "id": "tile_006",
+    "title": "Modern Pink Fluid Art",
+    "description": "Vibrant fluid art with pink and purple blending",
+    "image": "https://i.ibb.co.com/wZmJmY3j/adrianna-kaczmarek-6-RGng-0-N9-Ms-unsplash.jpg",
+    "category": "fluid-art",
+    "price": 52.0,
+    "currency": "USD",
+    "dimensions": "70x70 cm",
+    "material": "Glass",
+    "inStock": true
+  }
+]

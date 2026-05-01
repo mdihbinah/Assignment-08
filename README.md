@@ -23,4 +23,5 @@ A tile showcase platform where users can explore, search, and manage tile collec
 - MongoDB
 - BetterAuth
 - DaisyUI
-- JSON Server
+- Animate.css
+- 

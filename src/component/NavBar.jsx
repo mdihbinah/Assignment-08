@@ -1,9 +1,11 @@
 import Link from "next/link";
 import NavLink from "./NavLink";
+import RightBar from "./RightBar";
 
 
 
 const NavBar = () => {
+
     const links = (
         <>
             <li><NavLink href={'/'} name={'Home'}></NavLink></li>
@@ -33,7 +35,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link href={'/login'} className="btn">Log In</Link>
+    <RightBar></RightBar>
   </div>
 </div>
         </div>

@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Featuredtiles = async() => {
     const d = await tiles()
     const featuredtiles = d.slice(0,4)
-    console.log(featuredtiles)
+    // console.log(featuredtiles)
     return (
         <div className='mt-5 flex flex-col justify-center items-center container mx-auto' >
             <h1 className='font-bold text-2xl' >Featured Tiles</h1>

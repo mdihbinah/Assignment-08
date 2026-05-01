@@ -3,6 +3,7 @@ import { authClient } from '@/lib/auth-client';
 import { object } from 'better-auth';
 import { redirect } from 'next/dist/server/api-utils';
 import { FaGoogle } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Register = () => {
   const handleRegister = async(e) => {
@@ -20,11 +21,28 @@ const Register = () => {
     // console.log('Sign up response:', {data, error});
     
     if(error){
-        alert('Error sign up:' + error.message)
+        toast.error('Error sign up:' + error.message, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
     if(data){
-        alert('sign up successful! Check your Email.')
-        // redirect('/')
+              toast.success('sign up successful! Check your Email.', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
   }
 

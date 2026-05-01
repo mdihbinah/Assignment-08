@@ -26,8 +26,8 @@ const TilDetails = async({params}) => {
                 </div>
                 <p>{description}</p>
                 <div className="flex justify-between">
-                    <button className='btn btn-accent'>Buy</button>
                     <button className='btn btn-accent'>Add to Cart</button>
+                    <button className='btn btn-accent'>Buy</button>
                 </div>
             </div>
         </div>

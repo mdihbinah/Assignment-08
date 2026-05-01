@@ -22,9 +22,8 @@ const AllTiles = () => {
         const searched = data.filter(tile => tile.title.toLowerCase().includes(ele.toLowerCase()) )
 
         
-        console.log(ele);
+        // console.log(ele);
         if(ele == '') {
-            console.log(ele, 'kkkk', data);
             setAllTiles(data)
         } else{
             setAllTiles(searched)
@@ -32,7 +31,7 @@ const AllTiles = () => {
 
     }
     return (
-        <div className='container my-5 mx-5 md:mx-auto flex flex-col justify-center items-center' >
+        <div className='container my-5 mx-5 md:mx-auto flex flex-col justify-center items-center ' >
                     <h1 className='mb-5 text-2xl font-bold'>All Tiles</h1>
                 <div className="flex justify-center items-center mb-5">
                     <form >

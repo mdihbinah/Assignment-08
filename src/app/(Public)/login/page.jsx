@@ -3,6 +3,7 @@ import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import { FaGoogle } from 'react-icons/fa';
 import { Fa0 } from 'react-icons/fa6';
+import { toast } from 'react-toastify';
 
 const LogIn = () => {
   const handleLogin = async(e) =>{
@@ -17,9 +18,30 @@ const LogIn = () => {
     })
 
     if(error){
-      console.log('Log in Error:' + error.message);
+      toast.error('Log in Error:' + error.message, {
+position: "top-center",
+autoClose: 2000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+});
     } else if(data){
-      console.log('Log In Successful ');
+      console.log();
+      toast.success('Log In Successful ', {
+position: "top-center",
+autoClose: 2000,
+hideProgressBar: false,
+closeOnClick: false,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+theme: "light",
+});
+    
+      
     }
 
   }

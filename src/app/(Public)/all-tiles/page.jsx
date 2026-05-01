@@ -56,7 +56,7 @@ const AllTiles = () => {
             <div className="grid md:grid-cols-3 gap-5">
                 {
                     allTiles.map(ele =>{
-                        return <div key={ele.id} className="flex flex-col justify-center items-center gap-5 border p-5 max-w-100 card text-center hover:shadow-2xl ">
+                        return <div key={ele.id} className="flex flex-col justify-center items-center gap-5 border p-5 max-w-100 card text-center hover:shadow-2xl animate__animated animate__slideInUp animate__delay-.5s animate__slow">
                         <Image src={ele.image} alt='Tiles Image' width={150} height={150}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-md' ></Image>
                         <h2>{ele.title}</h2>

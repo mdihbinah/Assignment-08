@@ -33,7 +33,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Sign In</a>
+    <Link href={'/login'} className="btn">Log In</Link>
   </div>
 </div>
         </div>

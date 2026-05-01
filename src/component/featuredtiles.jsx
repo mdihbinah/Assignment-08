@@ -1,6 +1,7 @@
 import React from 'react';
 import { tiles } from './data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Featuredtiles = async() => {
     const d = await tiles()
@@ -13,9 +14,11 @@ const Featuredtiles = async() => {
                 {
                     featuredtiles.map(ele => {
                         return <div key={ele.id} className="flex flex-col justify-center items-center gap-5 border p-5 max-w-100 card text-center hover:shadow-2xl ">
-                            <Image src={ele.image} alt='Tiles Image' width={150} height={150} className='rounded-md' ></Image>
+                            <Image src={ele.image} alt='Tiles Image' width={150} height={150}
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className='rounded-md' ></Image>
                             <h2>{ele.title}</h2>
-                            <button className='btn btn-success'>View Details</button>
+                            <Link href={`tile/${ele.id}`}><button className='btn btn-success'>View Details</button></Link>
                         </div>
                     })
                 }

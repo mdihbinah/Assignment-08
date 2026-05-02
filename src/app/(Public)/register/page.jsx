@@ -2,10 +2,12 @@
 import { authClient } from '@/lib/auth-client';
 import { object } from 'better-auth';
 import { redirect } from 'next/dist/server/api-utils';
+import { useRouter } from 'next/navigation';
 import { FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 const Register = () => {
+  const router = useRouter()
   const handleRegister = async(e) => {
     e.preventDefault()
     const formData = new FormData(e.currentTarget);
@@ -16,7 +18,7 @@ const Register = () => {
       image: userData.photolink,
       email: userData.email,
       password: userData.password,
-      callbackURL: '/'
+      callbackURL: '/login'
     })
     // console.log('Sign up response:', {data, error});
     
@@ -33,7 +35,8 @@ const Register = () => {
         });
     }
     if(data){
-              toast.success('sign up successful! Check your Email.', {
+      router.push('/login')
+      toast.success('sign up successful! Check your Email.', {
         position: "top-center",
         autoClose: 2000,
         hideProgressBar: false,

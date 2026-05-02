@@ -19,7 +19,10 @@ const RightBar = () => {
                     <Link href={'/profile'} className="btn btn-success">Profile</Link>
                     <Link href={'/login'} onClick={async() => { await authClient.signOut()}} className="btn">Log Out<MdLogout /></Link>
                 </div>
-            : <Link href={'/login'} className="btn btn-success">Log In<MdLogin /></Link>
+            : <div className="flex space-x-3">
+                <Link href={'/login'} className="btn btn-success">Log In<MdLogin /></Link>
+                <Link href={'/register'} className="btn btn-success hidden md:flex">Sign Up<MdLogin /></Link>
+            </div>
             }
         </div>
     );

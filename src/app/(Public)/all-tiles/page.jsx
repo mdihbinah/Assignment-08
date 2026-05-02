@@ -1,5 +1,6 @@
 'use client'
 import { tiles } from '@/component/data';
+import TileCard from '@/component/TileCard';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
@@ -8,14 +9,14 @@ let data = []
 const AllTiles = () => {
     const [allTiles, setAllTiles] = useState(data)
 
-
     useEffect(() => {
         const fetchTiles = async () => {
             data = await tiles();
             setAllTiles(data);
         };
         fetchTiles();
-    }, []);
+    }, [])
+
     const handleSearch = (e) => {
         const ele = e.target.value
         
@@ -55,14 +56,7 @@ const AllTiles = () => {
             <div className="flex justify-center ">
             <div className="grid md:grid-cols-3 gap-5">
                 {
-                    allTiles.map(ele =>{
-                        return <div key={ele.id} className={`flex flex-col justify-center items-center gap-5 border p-5 max-w-100 card text-center hover:shadow-2xl animate__animated animate__slideInUp animate__delay-.5s animate__slow`}>
-                        <Image src={ele.image} alt='Tiles Image' width={150} height={150}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='rounded-md' ></Image>
-                        <h2>{ele.title}</h2>
-                        <Link href={`tile/${ele.id}`} ><button className='btn btn-success'>Details</button></Link>
-                    </div>
-                    })
+                    allTiles.map(tile =><TileCard key={tile.id} tile={tile}></TileCard>)
                 }
             </div>
             </div>

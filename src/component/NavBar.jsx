@@ -10,6 +10,7 @@ const NavBar = () => {
         <>
             <li><NavLink href={'/'} name={'Home'}></NavLink></li>
             <li><NavLink href={'/all-tiles'} name={'All Tiles'}></NavLink></li>
+            <li><NavLink href={'/profile'} name={'My Profile'}></NavLink></li>
         </>
     )
 

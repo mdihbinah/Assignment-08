@@ -13,7 +13,7 @@ A tile showcase platform where users can explore, search, and manage tile collec
 *   **Interactive UI:** 
     *   **Marquee:** Scrolling announcements for new arrivals.
     *   **Responsive Design:** Fully optimized for Mobile, Tablet, and Desktop.
-*   **Data Fetching:** Robust integration with a JSON server/API to manage tile details.   
+*   **Data Fetching:** Robust integration with a API to manage tile details.   
 *   **Loading States:** Custom loaders implemented for a smooth user experience during data fetching.
 
 ---

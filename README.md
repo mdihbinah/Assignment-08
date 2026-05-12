@@ -1,7 +1,7 @@
 # 🧱 Tiles Gallery
 
-## 🔗 Live URL
-https://assignment-08-iota.vercel.app/
+## 🔗 <a target='_blank'>[Live URL](https://assignment-08-iota.vercel.app/)</a>
+
 
 ## 📌 Project Purpose
 A tile showcase platform where users can explore, search, and manage tile collections with authentication.
